@@ -26,17 +26,14 @@
 </head>
 <body>
     <div id="main">
-        <video id="video1" muted="muted" autoplay="autoplay" loop="loop" src="https://tianfeng.space/wp-content/uploads/2022/12/1.mp4">
-
-        </video>
+        <video id="video1" muted="muted" loop="loop" src="https://tianfeng.space/wp-content/uploads/2022/12/1.mp4"></video>
     </div>
-</body>
 
-<script type="text/javascript">
-    $(function(){
-        var video = document.getElementById('video1');
-        video.src = "";
-        video.play();
-    })
-</script>
+    <script type="text/javascript">
+        document.addEventListener('WeixinJSBridgeReady', function(){
+            var video = document.getElementById('video1');
+            video.play();
+        }, false);
+    </script>
+</body>
 </html>
