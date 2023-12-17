@@ -3,37 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>圣诞树</title>
-    <style>
-        html,body{
-            margin: 0;
-            width: 100%;
-            height: 100%;
-        }
-        #main{
-            position: absolute;
-            top: 0;
-            left: 0;
-        }
-        #video1{
-            width: 100%;
-            height: 100%;
-        }
-        .hidden{
-            display: none;
-        }
-    </style>
+    <title>视频播放</title>
 </head>
 <body>
-    <div id="main">
-        <video id="video1" muted="muted" loop="loop" src="https://tianfeng.space/wp-content/uploads/2022/12/1.mp4"></video>
-    </div>
-
-    <script type="text/javascript">
-        document.addEventListener('WeixinJSBridgeReady', function(){
-            var video = document.getElementById('video1');
-            video.play();
-        }, false);
-    </script>
+    <video width="640" height="480" controls>
+        <source src="https://tianfeng.space/wp-content/uploads/2022/12/1.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
 </body>
 </html>
